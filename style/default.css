@@ -1,0 +1,187 @@
+/* CSS affectant toutes les pages*/
+* {
+	margin:0;
+	padding:0;
+}
+.centre{text-align:center;}
+.borderBottom{ border-bottom:1px solid black; }
+h2{font-size:xx-large; text-decoration:underline;}
+h3{font-size:large; text-decoration:underline;}
+a:link {color: black ; text-decoration: underline ;}
+a:visited {color: black ; }
+a:hover { color: red ; text-decoration: underline ; }
+#content p{
+margin:10px;
+}
+#content{color:silver;}
+#souscontent{color:black;}
+body{
+background:url(../img/metal-texture.jpg);
+background-attachment:fixed;
+}
+
+#global{
+border-left:1px solid black;
+border-right:1px solid black;
+width:1000px;
+margin:auto; 
+-moz-box-shadow: 7px 7px 15px #000000;
+-webkit-box-shadow: 7px 7px 15px #000000;
+box-shadow: 7px 7px 15px #000000;}
+
+	#header{
+	width:1000px;
+	height:100px;
+	background-color:white;
+	margin:auto;
+	}
+
+		#langue{display: inline; position:absolute; top:10px; left:50%; margin-left:400px;}
+		#langue img.selected{background-color:#31312e;}
+		#langue img:hover{background-color:#31312e;}
+
+	#divmenu{
+	border-bottom:3px solid white;
+	width: 1000px;
+	height:120px;
+	margin:auto;
+	background: rgb(178,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(178,0,0,1) 14%, rgba(49,49,46,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(14%,rgba(178,0,0,1)), color-stop(100%,rgba(49,49,46,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(178,0,0,1) 14%,rgba(49,49,46,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(178,0,0,1) 14%,rgba(49,49,46,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(178,0,0,1) 14%,rgba(49,49,46,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(178,0,0,1) 14%,rgba(49,49,46,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b20000', endColorstr='#31312e',GradientType=0 ); /* IE6-9 */
+
+	}
+
+	#menu{
+	background:#8f0404;
+	text-align:center;
+	width: 1000px;
+	list-style-type: none;
+	position: absolute;
+	}
+		#menu li{
+		background:#8f0404;
+		float: left;
+		width: 249px;
+		height:29px;
+		border-right: 1px solid black;
+		line-height:30px;
+		border-bottom: 1px solid black;
+		cursor:pointer;
+		}
+		#menu li.last{
+		border-right: 0px solid black;
+		}
+		#menu li.lastBottom{
+		border-bottom: 1px solid black;
+		}
+		#menu li a{ color:silver;}
+		#menu li:hover > a{ color:white;}
+		#menu li:hover { background:#CB460D;}
+			.sousMenu{
+			display: none;
+			list-style-type: none;
+			}
+			.sousMenu li{
+			float: none;
+			margin-left: -1px;
+			border-left: 1px solid black;
+			}
+
+		#menu li:hover > .sousMenu { display: block; }
+
+	#content{
+	overflow:auto;
+	margin:auto;
+	width:1000px;
+	min-height:400px;
+	background-color:#31312e;
+	}
+		#title{
+		height:40px;
+		background:#8f0404;
+		font-size:30px;
+		text-align:center;
+		border-bottom:3px solid white;
+		
+		}
+
+	#footer{
+	width:1000px;
+	height:60px;
+	background-color:rgb(200,200,200);
+	margin:auto;
+	text-align:center;
+	}
+		#marque{position:absolute;left:50%;margin-left:420px;}
+
+#social{
+width:35px;
+position:fixed;
+bottom:60px;
+left:50%;
+margin-left:500px;
+border:1px solid black;
+height:105px;
+padding:10px;
+background:#31312e;
+-moz-box-shadow: 7px 7px 15px #000000;
+-webkit-box-shadow: 7px 7px 15px #000000;
+box-shadow: 7px 7px 15px #000000;
+-webkit-border-radius: 0px 20px 20px 0px;
+-moz-border-radius: 0px 20px 20px 0px;
+border-radius: 0px 20px 20px 0px;
+}
+#social img{cursor:pointer;}
+
+/* CSS affectant quelques pages*/
+#souscontent{
+margin:auto; border:1px solid black;	width:800px;
+background:white;
+overflow:auto;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+margin-top:40px;
+margin-bottom:60px;
+padding:10px;
+}
+
+/* CSS affectant index */
+video{margin-top:20px;margin-bottom:20px;}
+
+
+/* CSS affectant les pages presentant les film disponibles*/
+.affiche{
+display:block;
+float:left;
+margin-top:10px;
+margin-left:40px;
+}
+.affiche:hover{
+opacity:0.5;}
+
+/* CSS affectant les page presentant un film */
+#intro{
+width:100%;
+float:left;
+border-bottom:1px solid;
+text-align:center;}
+#detail{
+margin:20px;
+}
+.imgaff{
+display:block;
+float:left;
+}
+
+#tri{position:absolute;left:50%;margin-left:350px; top:1150px;}
+
+
+/* CSS affectant la page contact*/
+form{margin:20px;}
+#form{width:600px;padding:20px;}

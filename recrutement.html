@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cinéma</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style/default.css" />
+	<link rel="icon" href="img/logo/favicon.ico" />
+		<link rel="stylesheet" href="jquery/jquery-ui.css" />
+	<script src="jquery/jquery-1.9.0.js"></script>
+	<script src="jquery/jquery-ui.js"></script>
+ <script>
+$(function() {
+$( "#accordion" ).accordion();
+});
+</script>
+</head>
+<body>
+<div id="global">
+	<div id="header" class="borderBottom">
+		<img src="img/logo/logo.png" width="90" height="90" alt="logo" /><img src="img/logo/logotexte.png" alt="logotexte" />
+		<div id="langue">
+			<a href="recrutement.html"><img src="img/logo/francais.png" alt="francais"  class="selected"/></a> <a href="en/recrutement.html"><img src="img/logo/anglais.png" alt="anglais" /></a>
+		</div>
+	</div>
+	<div id="divmenu" class="borderBottom" >
+		<ul id="menu">
+			<li>
+				<a href="index.html">Accueil</a>
+			</li>
+			<li>
+				<a href="infos.html">Informations</a>
+				<ul class="sousMenu">
+					<li><a href="infos.html#histoire">Histoire</a></li>
+					<li><a href="infos.html#acces">Plan d'acces</a></li>
+					<li class="lastBottom"><a href="infos.html#tarifshoraires">Tarifs et horaires</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="alaffiche.html">Films</a>
+				<ul class="sousMenu">
+					<li><a href="alaffiche.html">A l'affiche</a></li>
+					<li class="lastBottom"><a href="avenir.html">A venir</a></li>
+				</ul>
+			</li>
+			<li class="last"><a href="recrutement.html">Recrutement</a>
+			</li>
+		</ul>
+	</div>
+	<div id="content" class="borderBottom" >
+		<div id="title" >Recrutement</div>
+		<div id="souscontent">
+		<div id="accordion">
+		<h3>Nous recherchons</h3>
+		<div>
+		<p>Nous sommes actuellement à la recherche de :<br />- un(e) hôte(sse) d'accueil<br />- un(e) projectionniste</p>
+		</div>
+		<h3>CV</h3>
+		<div>
+		<p>Si vous êtes intéressé par un poste, veuillez envoyer un CV à cette adresse:<br />recrutement@cinema-metropolis.fr</p>
+		</div>
+		</div>
+		</div>
+	</div>
+	<div id="footer">
+		<a href="plan.html" title="plan">Plan du site</a><br /><a href="mentions.html" title="mentions legales">Mentions légales</a><br /><a href="contact.html" title="contact">Contact</a>
+		<span id="marque">Métropolis®</span>
+	</div>
+	<div id="social"><img src="img/logo/fb.png" alt="fb" /></br><img src="img/logo/twitter.png" alt="twitter" /></br><img src="img/logo/rss.png" alt="rss" /></div>
+</div>
+</body>
+</html>
